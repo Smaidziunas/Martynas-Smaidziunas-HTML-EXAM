@@ -19,43 +19,73 @@
   padding-top: 32px;
   overflow: hidden;
 
-
   .burgerIcon{
   color: v.$secondary-color;
   font-size: 22px;
   }
-
-  // .logo{
-  //   min-height: 36px;
-  //   min-width: 198px;
-  // }
 }
 
 
-  .hero{
+//  Hero
+
+.hero{
   max-width: 1280px;
   overflow: hidden;
   
-
   .hero-flex{
-  display:flex;
-  padding-top: 42px;
-  min-width: 482.62px;
+    display:flex;
+    padding-top: 42px;
+    min-width: 482.62px;
 
-  .hero-description{
-    max-width: 274px;
-    padding-top: 38px;
-    justify-self: end;
-    position: relative;
-  }
-
-  .hero-img{
-    object-fit: fill;
-    max-width: none;
-    max-height: 302px;
-  }
+    .hero-img-div{
+      position: relative;
+    
+      .hero-img{
+        position: absolute;
+        max-width: none;
+        height: 366px;
+        top: -30px;
+        left: -105px;
+      }
     }
+
+    .hero-description{
+      flex-basis: 274px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 274px;
+      padding-top: 38px;
+
+        .hero-pretitle{
+          color: v.$secondary-pink-color;
+          letter-spacing: 10%;
+          font-weight: 700;
+          text-align: left;
+          text-transform: uppercase;
+          margin-bottom: 24px;
+        }
+        .hero-title{
+          color: v.$black-color;
+          font-weight: 900;
+          font-size: 48px;
+          margin-bottom: 24px;
+            span{
+              text-transform: uppercase;
+            }
+            &::first-letter{
+              text-transform: capitalize;
+            }
+          }
+        .hero-paragraph{
+          color: v.$dark2-color;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 150%;
+        }
+      }
   }
+}
+
 
 
 

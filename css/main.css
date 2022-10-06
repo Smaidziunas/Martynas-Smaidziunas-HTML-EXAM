@@ -115,15 +115,50 @@ p {
   padding-top: 42px;
   min-width: 482.62px;
 }
-.hero .hero-flex .hero-description {
-  max-width: 274px;
-  padding-top: 38px;
-  justify-self: end;
+.hero .hero-flex .hero-img-div {
   position: relative;
 }
-.hero .hero-flex .hero-img {
-  -o-object-fit: fill;
-     object-fit: fill;
+.hero .hero-flex .hero-img-div .hero-img {
+  position: absolute;
   max-width: none;
-  max-height: 302px;
+  height: 366px;
+  top: -30px;
+  left: -105px;
+}
+.hero .hero-flex .hero-description {
+  -ms-flex-preferred-size: 274px;
+      flex-basis: 274px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 274px;
+  padding-top: 38px;
+}
+.hero .hero-flex .hero-description .hero-pretitle {
+  color: #FF3998;
+  letter-spacing: 10%;
+  font-weight: 700;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.hero .hero-flex .hero-description .hero-title {
+  color: rgb(17, 17, 17);
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+.hero .hero-flex .hero-description .hero-title span {
+  text-transform: uppercase;
+}
+.hero .hero-flex .hero-description .hero-title::first-letter {
+  text-transform: capitalize;
+}
+.hero .hero-flex .hero-description .hero-paragraph {
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
 }/*# sourceMappingURL=main.css.map */
