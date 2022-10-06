@@ -3,18 +3,13 @@
 @use 'vars' as v;
 @use 'commons';
 
-
 // imports
-
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 @import url("https://necolas.github.io/normalize.css/latest/normalize.css");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 
-
-
 // Header
-
 .header  {
   padding-top: 32px;
   overflow: hidden;
@@ -25,12 +20,11 @@
   }
 }
 
-
 //  Hero
-
 .hero{
   max-width: 1280px;
   overflow: hidden;
+  margin-bottom: 80px;
   
   .hero-flex{
     display:flex;
@@ -58,7 +52,7 @@
 
         .hero-pretitle{
           color: v.$secondary-pink-color;
-          letter-spacing: 10%;
+          letter-spacing: 1px;
           font-weight: 700;
           text-align: left;
           text-transform: uppercase;
@@ -81,11 +75,18 @@
           font-weight: 400;
           font-size: 20px;
           line-height: 150%;
+          margin-bottom: 32px;
         }
       }
   }
 }
 
+// Banner
+.banner{
+  min-width: 428px;
+  height: 326px;
+  background-image: url(/images/assets/background.svg)
+}
 
 
 
