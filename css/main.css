@@ -9,7 +9,7 @@
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ededed;
+  background-color: #fff;
 }
 
 a {
@@ -41,8 +41,8 @@ p {
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .card {
@@ -54,7 +54,23 @@ p {
   background-color: snow;
 }
 
-/*  helpers */
+.flexCtr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -79,7 +95,18 @@ p {
   max-width: 300px;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.flexCtr {
+  gap: 142px;
+}
+
+.burgerIcon {
+  color: rgb(153, 153, 153);
+}
+
+.burger2 {
+  font-size: 22px;
+}
+
+.burger2::first-child {
+  width: 30px;
 }/*# sourceMappingURL=main.css.map */

@@ -13,9 +13,22 @@
 
 
 
+// Header
 
+.flexCtr {
+  gap: 142px;
+}
 
+.burgerIcon{
+  color: v.$secondary-color;
+}
 
+.burger2 {
+  font-size: 22px;
+}
+
+.burger2::first-child {
+  width: 30px;}
 
 
 

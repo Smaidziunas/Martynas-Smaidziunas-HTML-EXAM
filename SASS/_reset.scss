@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #ededed;
+  background-color: #fff ;
 }
 
 a {
@@ -37,8 +37,8 @@ p {
 
 .container {
   max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 
 .card {
@@ -49,26 +49,3 @@ p {
   background-color: snow;
 }
 
-/*  helpers */
-
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.flex-col {
-  flex-direction: column;
-}
-
-.align-start {
-  align-items: flex-start;
-}
-
-.max-w-300 {
-  max-width: 300px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
