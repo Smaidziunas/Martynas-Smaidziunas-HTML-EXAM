@@ -108,21 +108,20 @@ p {
   max-width: 1280px;
   overflow: hidden;
 }
-
-.hero-flex {
+.hero .hero-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-top: 42px;
   min-width: 482.62px;
 }
-.hero-flex .hero-description {
+.hero .hero-flex .hero-description {
   max-width: 274px;
   padding-top: 38px;
   justify-self: end;
   position: relative;
 }
-.hero-flex .hero-img {
+.hero .hero-flex .hero-img {
   -o-object-fit: fill;
      object-fit: fill;
   max-width: none;

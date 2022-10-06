@@ -33,9 +33,9 @@
 
 
   .hero{
-    max-width: 1280px;
-    overflow: hidden;
-  }
+  max-width: 1280px;
+  overflow: hidden;
+  
 
   .hero-flex{
   display:flex;
@@ -49,12 +49,13 @@
     position: relative;
   }
 
-    .hero-img{
-      object-fit: fill;
-      max-width: none;
-      max-height: 302px;
+  .hero-img{
+    object-fit: fill;
+    max-width: none;
+    max-height: 302px;
+  }
     }
-    }
+  }
 
 
 
