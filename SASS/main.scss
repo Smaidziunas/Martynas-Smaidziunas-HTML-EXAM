@@ -94,6 +94,19 @@
   }
   }
 
+  // MoreInfo
+  .company-logos{
+    padding-top: 64px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 28px;
+    column-gap: 75px;
+
+    img{
+      place-self: center;
+    }
+  }
+
 
 
 

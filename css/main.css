@@ -213,4 +213,17 @@ p {
 .banner-div .banner-paragraph {
   font-size: 20px;
   line-height: 150%;
+}
+
+.company-logos {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 28px;
+  -webkit-column-gap: 75px;
+     -moz-column-gap: 75px;
+          column-gap: 75px;
+}
+.company-logos img {
+  place-self: center;
 }/*# sourceMappingURL=main.css.map */
