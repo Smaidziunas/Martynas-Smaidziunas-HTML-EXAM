@@ -15,14 +15,46 @@
 
 // Header
 
-.flexCtr {
-  gap: 142px;
-}
+.header  {
+  padding-top: 32px;
+  overflow: hidden;
 
-.burgerIcon{
+
+  .burgerIcon{
   color: v.$secondary-color;
   font-size: 22px;
+  }
+
+  // .logo{
+  //   min-height: 36px;
+  //   min-width: 198px;
+  // }
 }
+
+
+  .hero{
+    max-width: 1280px;
+    overflow: hidden;
+  }
+
+  .hero-flex{
+  display:flex;
+  padding-top: 42px;
+  min-width: 482.62px;
+
+  .hero-description{
+    max-width: 274px;
+    padding-top: 38px;
+    justify-self: end;
+    position: relative;
+  }
+
+    .hero-img{
+      object-fit: fill;
+      max-width: none;
+      max-height: 302px;
+    }
+    }
 
 
 

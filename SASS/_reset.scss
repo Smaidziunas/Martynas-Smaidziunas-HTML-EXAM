@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Inter', sans-serif;
   background-color: #fff ;
 }
 
@@ -36,9 +36,9 @@ p {
 }
 
 .container {
-  max-width: 900px;
-  margin-left: 32px;
-  margin-right: 32px;
+  max-width: 1280px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .card {

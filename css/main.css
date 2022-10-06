@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", sans-serif;
   background-color: #fff;
 }
 
@@ -40,9 +40,9 @@ p {
 }
 
 .container {
-  max-width: 900px;
-  margin-left: 32px;
-  margin-right: 32px;
+  max-width: 1280px;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .card {
@@ -58,9 +58,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -95,11 +95,36 @@ p {
   max-width: 300px;
 }
 
-.flexCtr {
-  gap: 142px;
+.header {
+  padding-top: 32px;
+  overflow: hidden;
 }
-
-.burgerIcon {
+.header .burgerIcon {
   color: rgb(153, 153, 153);
   font-size: 22px;
+}
+
+.hero {
+  max-width: 1280px;
+  overflow: hidden;
+}
+
+.hero-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 42px;
+  min-width: 482.62px;
+}
+.hero-flex .hero-description {
+  max-width: 274px;
+  padding-top: 38px;
+  justify-self: end;
+  position: relative;
+}
+.hero-flex .hero-img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-width: none;
+  max-height: 302px;
 }/*# sourceMappingURL=main.css.map */
