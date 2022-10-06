@@ -101,12 +101,5 @@ p {
 
 .burgerIcon {
   color: rgb(153, 153, 153);
-}
-
-.burger2 {
   font-size: 22px;
-}
-
-.burger2::first-child {
-  width: 30px;
 }/*# sourceMappingURL=main.css.map */
