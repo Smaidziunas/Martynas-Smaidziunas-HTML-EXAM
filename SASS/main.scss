@@ -107,6 +107,26 @@
     }
   }
 
+  .products-description{
+    padding-top: 56px;
+
+    .product-title{
+      font-weight: 500;
+      font-size: 40px;
+      margin-bottom: 16px;      
+    }
+    .product-paragraph{
+      font-size: 20px;
+      color: v.$dark2-color;
+      margin-bottom: 40px;
+        a{
+          text-decoration: underline;
+        }
+    }
+
+    
+
+  }
 
 
 
