@@ -8,3 +8,11 @@
     text-transform: capitalize;
   }
 }
+
+// containers
+
+@mixin flex-overfl($basis:274px) {
+  flex-basis: $basis;
+  flex-grow: 0;
+  flex-shrink: 0;
+}

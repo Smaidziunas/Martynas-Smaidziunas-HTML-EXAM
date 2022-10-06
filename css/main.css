@@ -243,4 +243,31 @@ p {
 }
 .products-description .product-paragraph a {
   text-decoration: underline;
+}
+
+.product-cards {
+  overflow: hidden;
+  margin-left: 2rem;
+}
+.product-cards .products-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-width: 620px;
+  -webkit-column-gap: 40px;
+     -moz-column-gap: 40px;
+          column-gap: 40px;
+}
+.product-cards .products-flex .product-card {
+  -ms-flex-preferred-size: 290px;
+      flex-basis: 290px;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }/*# sourceMappingURL=main.css.map */
