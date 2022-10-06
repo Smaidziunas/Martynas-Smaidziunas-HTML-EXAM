@@ -1,0 +1,10 @@
+// text helpers
+
+@mixin uppercase {
+  span{
+    text-transform: uppercase;
+  }
+  &::first-letter{
+    text-transform: capitalize;
+  }
+}

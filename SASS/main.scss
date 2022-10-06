@@ -1,6 +1,7 @@
 // Links
 @use 'reset';
 @use 'vars' as v;
+@use 'mixins' as m;
 @use 'commons';
 
 // imports
@@ -63,13 +64,8 @@
           font-weight: 900;
           font-size: 48px;
           margin-bottom: 24px;
-            span{
-              text-transform: uppercase;
-            }
-            &::first-letter{
-              text-transform: capitalize;
-            }
-          }
+            @include m.uppercase;
+
         .hero-paragraph{
           color: v.$dark2-color;
           font-weight: 400;
@@ -78,15 +74,28 @@
           margin-bottom: 32px;
         }
       }
-  }
+    }
+}
 }
 
 // Banner
-.banner{
-  min-width: 428px;
-  height: 326px;
-  background-image: url(/images/assets/background.svg)
-}
+.banner-div{
+  padding-top: 122px;
+  
+  .banner-title{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 16px;
+      @include m.uppercase;
+    }
+  .banner-paragraph{
+    font-size: 20px;
+    line-height: 150%;
+  }
+  }
+
+
+
 
 
 
