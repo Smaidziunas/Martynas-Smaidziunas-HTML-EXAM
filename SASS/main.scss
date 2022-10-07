@@ -52,11 +52,8 @@
       min-width: 274px;
 
         .hero-pretitle{
-          color: v.$secondary-pink-color;
-          letter-spacing: 1px;
-          font-weight: 700;
+          @include m.pretitle;
           text-align: left;
-          text-transform: uppercase;
           margin-bottom: 24px;
         }
         .hero-title{
@@ -67,11 +64,7 @@
             @include m.uppercase;
         }
         .hero-paragraph{
-          color: v.$dark2-color;
-          font-weight: 400;
-          font-size: 20px;
-          line-height: 150%;
-          margin-bottom: 32px;
+          @include m.custom-paragraph;
         }
         }
       }
@@ -102,7 +95,7 @@
   }
 }
 
-  // MoreInfo
+// MoreInfo
 .moreinfo{
   .company-logos{
     padding-top: 65px;
@@ -113,6 +106,7 @@
 
     img{
       place-self: center;
+      max-width: 100%;
     }
   }
 
@@ -212,7 +206,81 @@
   }
 }
 
- 
+// Upsell
+
+.upsell{
+  overflow: hidden;
+
+ .hr{
+      @include m.hline;
+  }
+  .hr2{
+    position: absolute;
+    @include m.hline($mt:327px, $mb:0px);
+  }
+  .hr3{
+    @include m.hline($mt:0px, $mb:0px);
+  }
+}
+
+.upsell-bgFlex{
+  margin-left: 32px;
+  display: flex;
+  flex-direction: row;
+
+  .upsell-text-flex{
+
+    .upsell-title-box{
+      width: 274px;
+
+      .upsell-pretitle{
+        @include m.pretitle;
+        margin-bottom: 24px;
+        padding-top: 64px;
+      }
+    
+      .upsell-title{
+        color: v.$black-color;
+        font-weight: 900;
+        font-size: 56px;
+        margin-bottom: 24px;
+          @include m.uppercase;
+      }
+    }
+
+    .upsell-fup-box{
+      width: 207px;
+    
+      .upsell-paragraph{
+          @include m.custom-paragraph;
+        margin-bottom: 32px;
+        padding-top: 5px;
+      }
+
+      .btn{
+        margin-bottom: 66px;
+      }
+    }
+  }
+
+  .upsell-img-flex{
+    position: relative;
+
+    .upsell-img{
+      position: absolute;
+      z-index: -1;
+      top: 162px;
+      left: -54px;
+    }
+  }
+    
+
+
+}
+
+  
+
+
 
 
 

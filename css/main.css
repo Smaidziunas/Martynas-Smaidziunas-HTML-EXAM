@@ -21,10 +21,6 @@ a {
   color: inherit;
 }
 
-img {
-  max-width: 100%;
-}
-
 /* 
 button {
   font-size: 16px;
@@ -91,10 +87,11 @@ p {
 }
 
 .btn {
+  font-family: "Inter", sans-serif;
   border-radius: 49.46px;
   border: 4px solid black;
   background-color: #fff;
-  padding: 22px 56px 23px 56px;
+  padding: 22px 52px 23px 52px;
   color: rgb(17, 17, 17);
   font-size: 20px;
   text-align: center;
@@ -166,8 +163,8 @@ p {
   color: #FF3998;
   letter-spacing: 1px;
   font-weight: 700;
-  text-align: left;
   text-transform: uppercase;
+  text-align: left;
   margin-bottom: 24px;
 }
 .hero .hero-flex .hero-description .hero-title {
@@ -228,6 +225,7 @@ p {
 }
 .moreinfo .company-logos img {
   place-self: center;
+  max-width: 100%;
 }
 .moreinfo .products-description {
   padding-top: 56px;
@@ -329,4 +327,88 @@ p {
 .product-card .card-info-div .card-info-div__pFlex > p {
   margin-bottom: 0px;
   padding-left: 8px;
+}
+
+.upsell {
+  overflow: hidden;
+}
+.upsell .hr {
+  background-color: rgba(17, 17, 17, 0.08);
+  width: 100vh;
+  height: 2px;
+  margin-top: 92px;
+  margin-bottom: 0px;
+}
+.upsell .hr2 {
+  position: absolute;
+  background-color: rgba(17, 17, 17, 0.08);
+  width: 100vh;
+  height: 2px;
+  margin-top: 327px;
+  margin-bottom: 0px;
+}
+.upsell .hr3 {
+  background-color: rgba(17, 17, 17, 0.08);
+  width: 100vh;
+  height: 2px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.upsell-bgFlex {
+  margin-left: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-title-box {
+  width: 274px;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-pretitle {
+  color: #FF3998;
+  letter-spacing: 1px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  padding-top: 64px;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-title {
+  color: rgb(17, 17, 17);
+  font-weight: 900;
+  font-size: 56px;
+  margin-bottom: 24px;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-title span {
+  text-transform: uppercase;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-title::first-letter {
+  text-transform: capitalize;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-fup-box {
+  width: 207px;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-fup-box .upsell-paragraph {
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin-bottom: 32px;
+  margin-bottom: 32px;
+  padding-top: 5px;
+}
+.upsell-bgFlex .upsell-text-flex .upsell-fup-box .btn {
+  margin-bottom: 66px;
+}
+.upsell-bgFlex .upsell-img-flex {
+  position: relative;
+}
+.upsell-bgFlex .upsell-img-flex .upsell-img {
+  position: absolute;
+  z-index: -1;
+  top: 162px;
+  left: -54px;
 }/*# sourceMappingURL=main.css.map */
