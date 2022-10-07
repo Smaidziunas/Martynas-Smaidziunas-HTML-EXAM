@@ -50,7 +50,7 @@
 }
 
 
-// SPACING
+// SPACING and GAPS
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -58,4 +58,8 @@
 
 .max-w-300 {
   max-width: 300px;
+}
+
+.img-block {
+  display: block;
 }

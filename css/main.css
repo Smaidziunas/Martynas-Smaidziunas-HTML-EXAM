@@ -118,6 +118,10 @@ p {
   max-width: 300px;
 }
 
+.img-block {
+  display: block;
+}
+
 .header {
   padding-top: 32px;
 }
@@ -237,7 +241,7 @@ p {
   font-size: 20px;
   line-height: 150%;
   color: rgb(85, 85, 85);
-  margin-bottom: 40px;
+  margin-bottom: 0px;
 }
 .moreinfo .products-description .product-paragraph a {
   text-decoration: underline;
@@ -248,6 +252,7 @@ p {
   margin-left: 2rem;
 }
 .product-cards .products-flex {
+  padding-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -261,16 +266,65 @@ p {
           column-gap: 40px;
   row-gap: 20px;
 }
-.product-cards .a {
-  display: block;
-}
-.product-cards .product-card {
+
+.product-card {
   row-gap: 20px;
 }
-.product-cards .product-card .card-info-div {
+.product-card .card-info-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
   border: none;
-  padding: 24px 24px;
+  padding: 24px;
   width: 100%;
-  height: 20px;
   background-color: rgb(238, 238, 238);
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.product-card .card-info-div__pDescr {
+  font-size: 12px;
+  color: rgb(255, 129, 57);
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+.product-card .card-info-div__pTitle {
+  font-size: 20px;
+  color: rgb(17, 17, 17);
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 12px;
+}
+.product-card .card-info-div__pNb {
+  font-size: 18px;
+  color: rgb(119, 119, 119);
+  margin-bottom: 0px;
+}
+.product-card .card-info-div .card-info-right :first-child {
+  text-align: end;
+  color: rgb(119, 119, 119);
+  font-weight: 500;
+}
+.product-card .card-info-div .card-info-right :last-child {
+  text-align: end;
+  color: rgb(119, 119, 119);
+  font-weight: 400;
+}
+.product-card .card-info-div .card-info-div__pFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.product-card .card-info-div .card-info-div__pFlex > p {
+  margin-bottom: 0px;
+  padding-left: 8px;
 }/*# sourceMappingURL=main.css.map */
