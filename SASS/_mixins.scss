@@ -1,7 +1,6 @@
 @use 'vars' as v;
 
 // text helpers
-
 @mixin uppercase {
   span{
     text-transform: uppercase;
@@ -26,6 +25,7 @@
   margin-bottom: 32px;
 }
 
+// spacing and gaps
 @mixin hline($mt:92px, $mb:0px){
   background-color:rgba(17, 17, 17, 8%);
   width: 100%;
@@ -34,8 +34,12 @@
   margin-bottom: $mb;
 }
 
-// containers
+@mixin dekstopMargins{
+  margin-left: 80px;
+  margin-right: 80px;
+}
 
+// containers
 @mixin flex-overfl($basis:274px) {
   flex-basis: $basis;
   flex-grow: 0;
@@ -47,3 +51,4 @@
   align-items: center;
   flex-direction: row;
 }
+

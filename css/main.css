@@ -117,10 +117,32 @@ p {
 
 .header {
   padding-top: 32px;
+  z-index: 10;
+  top: 0;
+  background-color: #fff;
 }
 .header .burgerIcon {
   color: rgb(153, 153, 153);
   font-size: 22px;
+}
+.header .dekstopMenu {
+  display: none;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 20px;
+}
+.header .dekstopMenu > a {
+  padding: 4px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgb(85, 85, 85);
+}
+.header .dekstopMenu :hover {
+  color: rgb(255, 57, 152);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .hero {
@@ -513,4 +535,46 @@ p {
 }
 .copyrightsFLex .footer-end-dkstp {
   display: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  section {
+    max-width: 1440px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .header {
+    padding-top: 70px;
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .header .flexSpBt .dekstopMenu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .flexSpBt .burgerIcon {
+    display: none;
+  }
+  .hero {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .background-div {
+    height: 320px;
+    background-position: 10%;
+    border-radius: 20px;
+  }
+  .background-div .banner-title {
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+  .background-div .banner-paragraph {
+    line-height: 30px;
+  }
+  .background-div .container {
+    margin-left: 64px;
+    margin-bottom: 64px;
+    padding-top: 154px;
+  }
 }/*# sourceMappingURL=main.css.map */

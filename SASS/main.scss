@@ -14,10 +14,31 @@
 // Header
 .header  {
   padding-top: 32px;
+  z-index: 10;
+  top: 0;
+  background-color: #fff; 
 
   .burgerIcon{
   color: v.$secondary-color;
   font-size: 22px;
+  }
+
+  .dekstopMenu{
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+
+   > a{
+    padding: 4px;
+    font-size: 20px;
+    font-weight: 400;
+    color: v.$dark2-color;
+  }
+
+  :hover{
+    color: v.$pink-color;
+    transition: 0.3s;
+  }
   }
 }
 
@@ -69,7 +90,6 @@
         }
       }
 }
-
 
 // Banner
 .background-div{

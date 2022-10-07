@@ -1,0 +1,60 @@
+@use 'mixins' as m;
+
+// Dekstop version
+
+@media only screen and (min-width: 1280px) {
+
+section {
+  max-width: 1440px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+// Header
+.header{
+padding-top: 70px;
+  @include m.dekstopMargins;
+// position: sticky;
+  .flexSpBt{
+    .dekstopMenu{
+      display: flex;
+    }
+    
+  .burgerIcon {
+    display: none;
+  }
+  } 
+}
+
+// Hero
+.hero{
+  @include m.dekstopMargins;
+
+}
+
+// Banner
+.background-div{
+  height: 320px;
+  background-position: 10%;
+  border-radius: 20px;
+
+  .banner-title{
+    line-height: 48px;
+    margin-bottom: 24px;
+  }
+
+  .banner-paragraph{
+    line-height: 30px;
+  }
+
+  .container{
+    margin-left: 64px;
+    margin-bottom: 64px;
+    padding-top: 154px;
+  }
+}
+
+
+
+
+}
