@@ -6,10 +6,6 @@
           box-sizing: border-box;
 }
 
-html {
-  margin-bottom: 500px;
-}
-
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
@@ -210,8 +206,10 @@ p {
   text-transform: capitalize;
 }
 .banner-div .banner-paragraph {
+  color: rgb(17, 17, 17);
   font-size: 20px;
   line-height: 150%;
+  font-weight: 400;
 }
 
 .moreinfo .company-logos {
@@ -415,6 +413,7 @@ p {
 
 .footer {
   margin-left: 32px;
+  overflow: hidden;
 }
 .footer .footerLogo {
   padding-top: 64px;
@@ -440,7 +439,8 @@ p {
   gap: 16px;
   margin-bottom: 64px;
   color: rgb(153, 153, 153);
-  font-size: 18px;
+  font-size: 21px;
+  margin-bottom: 64px;
 }
 .footer .socialIcons .fb-div {
   display: -webkit-box;
@@ -457,19 +457,24 @@ p {
 }
 .footer .socialIcons .fbcircle {
   position: absolute;
-  height: 21px;
-  width: 21px;
+  height: 46px;
+  width: 47px;
   color: rgba(255, 255, 255, 0);
-  border: 3.2px solid rgb(255, 255, 255);
+  border: 15px solid rgb(255, 255, 255);
   border-radius: 50%;
-  left: -3px;
+  left: -14.2px;
+  top: -11.5px;
+}
+.footer .socialIcons .tiktokIcon {
+  font-size: 17px;
 }
 
 .footer-bgGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 24px;
 }
-.footer-bgGrid .footer-cards .footer-card__flex {
+.footer-bgGrid .footer-cards .footer-card-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,4 +482,35 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 40px;
+  gap: 16px;
+}
+.footer-bgGrid .footer-cards .footer-card-flex__title {
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.copyrightsFLex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  max-width: 1440px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 105px;
+  margin-right: 32px;
+}
+.copyrightsFLex p {
+  color: rgb(153, 153, 153);
+  font-size: 20px;
+}
+.copyrightsFLex .footer-end-dkstp {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

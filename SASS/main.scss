@@ -90,8 +90,10 @@
       @include m.uppercase;
     }
   .banner-paragraph{
+    color: v.$black-color;
     font-size: 20px;
     line-height: 150%;
+    font-weight: 400;
   }
 }
 
@@ -273,9 +275,9 @@
 }
 
 // Footer
-
 .footer{
   margin-left: 32px;
+  overflow: hidden;
 
   .footerLogo{
     padding-top: 64px;
@@ -294,7 +296,8 @@
     gap: 16px;
     margin-bottom: 64px;
     color: v.$dark5-color;
-    font-size: 18px;
+    font-size: 21px;
+    margin-bottom: 64px;
     
     .fb-div{
         @include m.flexRowCtr;
@@ -302,51 +305,61 @@
     }
     .fbcircle{
       position: absolute;
-      height: 21px;
-      width: 21px;
+      height: 46px;
+      width: 47px;
       color: rgba(255, 255, 255, 0);  
-      border: 3.2px solid rgb(255, 255, 255);
+      border: 15px solid rgb(255, 255, 255);
       border-radius: 50%;
-      left: -3px;
+      left: -14.2px;
+      top: -11.5px;
     }
 
-
-
-        // .fbcircle{
-        //   height: 21px;
-        //   width: 21px;
-        //   color: rgba(255, 255, 255, 0);
-        //   border: 3px solid white;
-        //   border-radius: 50%;
-
-
-      
-    
-
+    .tiktokIcon{
+      font-size: 17px;
+    }
   }
 }
 
 .footer-bgGrid{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 24px;
 
   .footer-cards{
 
-    .footer-card__flex{
+    .footer-card-flex{
       display: flex;
       flex-direction: column;
+      margin-bottom: 40px;
+      gap: 16px;
+
+      &__title {
+        color: v.$dark2-color;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 8px;
+      }
     }
   }
 }
 
-  
+.copyrightsFLex{
+  display: flex;
+  flex-direction: row;
+  max-width: 1440px;
+  justify-content: space-between;
+  margin-bottom: 105px;
+  margin-right: 32px;
 
+    p{
+      color: v.$dark5-color;
+      font-size: 20px;
+    }
 
-
-
-
-
-
+  .footer-end-dkstp{
+  display: none;
+  }
+}
 
 
 
