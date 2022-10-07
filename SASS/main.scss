@@ -10,10 +10,10 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 
+
 // Header
 .header  {
   padding-top: 32px;
-  overflow: hidden;
 
   .burgerIcon{
   color: v.$secondary-color;
@@ -26,32 +26,30 @@
   max-width: 1280px;
   overflow: hidden;
   margin-bottom: 80px;
+  margin-left: 2rem;
   
   .hero-flex{
     display:flex;
+    flex-direction: row ;
     padding-top: 42px;
-    min-width: 482.62px;
 
     .hero-img-div{
       position: relative;
+      min-width: 400px;
     
       .hero-img{
         position: absolute;
-        max-width: none;
-        height: 366px;
-        top: -30px;
-        left: -105px;
+        height: 400px;
+        top: -48px;
+        left: -85px;
+        overflow: hidden;
+        z-index: -1;
       }
     }
 
     .hero-description{
-      @include m.flex-overfl;
-
-      // flex-basis: 274px;
-      // flex-grow: 0;
-      // flex-shrink: 0;
-      width: 274px;
       padding-top: 38px;
+      min-width: 274px;
 
         .hero-pretitle{
           color: v.$secondary-pink-color;
@@ -67,7 +65,7 @@
           font-size: 48px;
           margin-bottom: 24px;
             @include m.uppercase;
-
+        }
         .hero-paragraph{
           color: v.$dark2-color;
           font-weight: 400;
@@ -75,12 +73,20 @@
           line-height: 150%;
           margin-bottom: 32px;
         }
+        }
       }
-    }
-}
 }
 
+
 // Banner
+.background-div{
+  min-width: 428px;
+  height: 326px;
+  background-image: url(/images/assets/background.svg);
+  background-size: cover;
+  background-position: 5% 50%;
+}
+
 .banner-div{
   padding-top: 122px;
   
@@ -97,7 +103,8 @@
 }
 
   // MoreInfo
-.company-logos{
+.moreinfo{
+  .company-logos{
     padding-top: 65px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -107,7 +114,7 @@
     img{
       place-self: center;
     }
-}
+  }
 
 .products-description{
   padding-top: 56px;
@@ -127,11 +134,13 @@
       }
   } 
 }
+}
+
 
 // Product cards
 .product-cards{
-  overflow: hidden;
-  margin-left: 2rem;
+overflow: hidden;
+margin-left: 2rem;
 
   .products-flex{
     display: flex;
@@ -140,22 +149,22 @@
     column-gap: 40px;
     row-gap: 20px;
   }
-  .a {
-    display: block;
+    .a {
+      display: block;
   }
-}
 
-.product-card{
-  // @include m.flex-overfl($basis:290px);
-  row-gap: 20px;
+  .product-card{
+    // @include m.flex-overfl($basis:290px);
+    row-gap: 20px;
 
-  .card-info-div{
-    border: none;
-    padding: 24px 24px;
-    width: 100%;
-    height: 20px;
-    background-color: v.$dark3-color;
-   }
+    .card-info-div{
+      border: none;
+      padding: 24px 24px;
+      width: 100%;
+      height: 20px;
+      background-color: v.$dark3-color;
+    }
+  }
 }
  
 
