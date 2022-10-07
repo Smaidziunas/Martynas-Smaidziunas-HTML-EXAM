@@ -274,6 +274,21 @@
 
 // Footer
 
+
+
+.footer-bgGrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .footer-cards{
+
+    .footer-card__flex{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
   
 
 

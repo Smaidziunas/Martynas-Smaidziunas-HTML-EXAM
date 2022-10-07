@@ -334,7 +334,7 @@ p {
 }
 .upsell .hr {
   background-color: rgba(17, 17, 17, 0.08);
-  width: 100vh;
+  width: 100%;
   height: 2px;
   margin-top: 92px;
   margin-bottom: 0px;
@@ -342,14 +342,14 @@ p {
 .upsell .hr2 {
   position: absolute;
   background-color: rgba(17, 17, 17, 0.08);
-  width: 100vh;
+  width: 100%;
   height: 2px;
   margin-top: 327px;
   margin-bottom: 0px;
 }
 .upsell .hr3 {
   background-color: rgba(17, 17, 17, 0.08);
-  width: 100vh;
+  width: 100%;
   height: 2px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -411,4 +411,18 @@ p {
   z-index: -1;
   top: 162px;
   left: -54px;
+}
+
+.footer-bgGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.footer-bgGrid .footer-cards .footer-card__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }/*# sourceMappingURL=main.css.map */
