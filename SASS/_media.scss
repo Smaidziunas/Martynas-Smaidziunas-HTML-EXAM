@@ -14,7 +14,8 @@ section {
 .header{
 padding-top: 70px;
   @include m.dekstopMargins;
-// position: sticky;
+position: sticky;
+background-color: rgb(60, 87, 87);
   .flexSpBt{
     .dekstopMenu{
       display: flex;
@@ -37,6 +38,7 @@ padding-top: 70px;
   height: 320px;
   background-position: 10%;
   border-radius: 20px;
+  width: 1280px;
 
   .banner-title{
     line-height: 48px;
@@ -54,7 +56,79 @@ padding-top: 70px;
   }
 }
 
+// Moreinfo
+.moreinfo{
+  @include m.dekstopMargins;
+  .company-logos{
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 
+    img{
+      place-self: center;
+      max-width: 100%;
+    }
 
+    .openDoorsimg{
+      display: block;
+    }
+  }
 
+  .products-description{
+    padding-top: 120px
+  }
 }
+
+// Product cards
+.product-cards{
+  margin-left: 80px;
+}
+.product-cards .products-flex{
+  padding-top: 56px;
+}
+
+// Upsell
+
+// .Upsell{
+
+//   .hr{
+//     margin-top: 120px;
+//   }
+//   .hr2{
+//   display: none;
+//   }
+// }
+
+
+// .upsell .upsell-bgFlex{
+//   display: grid;
+//   grid-template-columns: 310px auto;
+//   width: 1280px;
+// }
+}
+// .upsell-bgFlex{
+//   display: grid;
+//   grid-template-columns: 310px auto;
+//   width: 1280px;
+// }
+
+// .upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-pretitle{
+//   padding-top: 120px;
+// }
+
+// .upsell-bgFlex .upsell-text-flex .upsell-title-box{
+//   width: 310px;
+// }
+
+// .upsell-bgFlex .upsell-text-flex .upsell-fup-box{
+//   width: 310px;
+// }
+
+// .upsell-bgFlex .upsell-img-flex .upsell-img {
+//   position: absolute;
+//   z-index: -1;
+//   top: 85px;
+//   left: 0;
+// }
+
+

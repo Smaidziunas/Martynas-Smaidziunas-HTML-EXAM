@@ -130,6 +130,9 @@
       place-self: center;
       max-width: 100%;
     }
+    .openDoorsimg{
+      display: none;
+    }
   }
 
 .products-description{
@@ -170,7 +173,6 @@
 
 .product-card{
   // @include m.flex-overfl($basis:290px);
-  row-gap: 20px;
   min-width: 290px;
   min-height: 400px;
 
@@ -182,8 +184,8 @@
     padding: 24px;
     width: 100%;
     background-color: v.$dark3-color;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
 
     &__pDescr{
       font-size: 12px;

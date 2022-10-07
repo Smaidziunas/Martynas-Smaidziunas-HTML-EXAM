@@ -247,6 +247,9 @@ p {
   place-self: center;
   max-width: 100%;
 }
+.moreinfo .company-logos .openDoorsimg {
+  display: none;
+}
 .moreinfo .products-description {
   padding-top: 56px;
 }
@@ -286,7 +289,6 @@ p {
 }
 
 .product-card {
-  row-gap: 20px;
   min-width: 290px;
   min-height: 400px;
 }
@@ -298,8 +300,8 @@ p {
   padding: 24px;
   width: 100%;
   background-color: rgb(238, 238, 238);
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 .product-card .card-info-div__pDescr {
   font-size: 12px;
@@ -547,6 +549,8 @@ p {
     padding-top: 70px;
     margin-left: 80px;
     margin-right: 80px;
+    position: sticky;
+    background-color: rgb(60, 87, 87);
   }
   .header .flexSpBt .dekstopMenu {
     display: -webkit-box;
@@ -564,6 +568,7 @@ p {
     height: 320px;
     background-position: 10%;
     border-radius: 20px;
+    width: 1280px;
   }
   .background-div .banner-title {
     line-height: 48px;
@@ -576,5 +581,30 @@ p {
     margin-left: 64px;
     margin-bottom: 64px;
     padding-top: 154px;
+  }
+  .moreinfo {
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  .moreinfo .company-logos {
+    padding-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .moreinfo .company-logos img {
+    place-self: center;
+    max-width: 100%;
+  }
+  .moreinfo .company-logos .openDoorsimg {
+    display: block;
+  }
+  .moreinfo .products-description {
+    padding-top: 120px;
+  }
+  .product-cards {
+    margin-left: 80px;
+  }
+  .product-cards .products-flex {
+    padding-top: 56px;
   }
 }/*# sourceMappingURL=main.css.map */
