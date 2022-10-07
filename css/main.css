@@ -607,4 +607,10 @@ p {
   .product-cards .products-flex {
     padding-top: 56px;
   }
+  .upsell .hr {
+    margin-top: 120px;
+  }
+  .upsell .hr2 {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
