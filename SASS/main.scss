@@ -207,7 +207,6 @@
 }
 
 // Upsell
-
 .upsell{
   overflow: hidden;
 
@@ -250,13 +249,11 @@
 
     .upsell-fup-box{
       width: 207px;
-    
       .upsell-paragraph{
           @include m.custom-paragraph;
         margin-bottom: 32px;
         padding-top: 5px;
       }
-
       .btn{
         margin-bottom: 66px;
       }
@@ -273,10 +270,9 @@
       left: -54px;
     }
   }
-    
-
-
 }
+
+// Footer
 
   
 
