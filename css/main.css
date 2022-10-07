@@ -269,6 +269,8 @@ p {
 
 .product-card {
   row-gap: 20px;
+  min-width: 290px;
+  min-height: 400px;
 }
 .product-card .card-info-div {
   display: grid;
