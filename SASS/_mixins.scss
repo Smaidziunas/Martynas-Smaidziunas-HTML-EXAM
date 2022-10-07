@@ -41,3 +41,9 @@
   flex-grow: 0;
   flex-shrink: 0;
 }
+
+@mixin flexRowCtr{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}

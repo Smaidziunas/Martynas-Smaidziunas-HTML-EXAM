@@ -413,6 +413,58 @@ p {
   left: -54px;
 }
 
+.footer {
+  margin-left: 32px;
+}
+.footer .footerLogo {
+  padding-top: 64px;
+  margin-bottom: 30px;
+}
+.footer .footer-title {
+  font-weight: 400;
+  font-size: 20px;
+  color: rgb(85, 85, 85);
+  margin-bottom: 32px;
+}
+.footer .socialIcons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 16px;
+  margin-bottom: 64px;
+  color: rgb(153, 153, 153);
+  font-size: 18px;
+}
+.footer .socialIcons .fb-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  position: relative;
+}
+.footer .socialIcons .fbcircle {
+  position: absolute;
+  height: 21px;
+  width: 21px;
+  color: rgba(255, 255, 255, 0);
+  border: 3.2px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  left: -3px;
+}
+
 .footer-bgGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);

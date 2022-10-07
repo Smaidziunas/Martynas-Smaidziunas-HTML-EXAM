@@ -274,7 +274,57 @@
 
 // Footer
 
+.footer{
+  margin-left: 32px;
 
+  .footerLogo{
+    padding-top: 64px;
+    margin-bottom: 30px;
+  }
+
+  .footer-title{
+    font-weight: 400;
+    font-size: 20px;
+    color: v.$dark2-color;
+    margin-bottom: 32px;
+  }
+
+  .socialIcons{
+      @include m.flexRowCtr;
+    gap: 16px;
+    margin-bottom: 64px;
+    color: v.$dark5-color;
+    font-size: 18px;
+    
+    .fb-div{
+        @include m.flexRowCtr;
+      position: relative;
+    }
+    .fbcircle{
+      position: absolute;
+      height: 21px;
+      width: 21px;
+      color: rgba(255, 255, 255, 0);  
+      border: 3.2px solid rgb(255, 255, 255);
+      border-radius: 50%;
+      left: -3px;
+    }
+
+
+
+        // .fbcircle{
+        //   height: 21px;
+        //   width: 21px;
+        //   color: rgba(255, 255, 255, 0);
+        //   border: 3px solid white;
+        //   border-radius: 50%;
+
+
+      
+    
+
+  }
+}
 
 .footer-bgGrid{
   display: grid;
