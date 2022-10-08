@@ -50,9 +50,6 @@ background-color: rgb(77, 168, 168);
 
   }
 
-    
-
-
   .hero-flex{
     padding-top: 182px;
     padding-bottom: 200px;
@@ -85,9 +82,6 @@ background-color: rgb(77, 168, 168);
   }
 
 }
-
-
-
 
 // Banner
 .background-div{
@@ -148,7 +142,6 @@ background-color: rgb(77, 168, 168);
 }
 
 // Upsell
-
 .upsell{
 
   .hr{
@@ -194,7 +187,41 @@ background-color: rgb(77, 168, 168);
   } 
 }
 
+// Footer
+.footer{
+    @include m.dekstopMargins;
+  max-width: 1280px;
+  padding-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 500px;
 
+  .socialIcons{
+    margin-bottom: 120px;
+  }
+
+  .footerLogo{
+    padding-top: 0px;
+  }
+
+  .footer-bgGrid{
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    margin-bottom: 0px;
+
+    .footer-cards .footer-card-flex{
+      margin-bottom: 0px;
+    }
+  }
+
+  .copyrightsFLex{
+    grid-column: span 2;
+    margin-bottom: 71px;
+  }
+  .footer-end-dkstp{
+    display: block;
+  }
+}
 
 
 
