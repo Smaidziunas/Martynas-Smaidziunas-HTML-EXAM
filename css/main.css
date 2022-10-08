@@ -541,10 +541,10 @@ p {
 
 @media only screen and (min-width: 1280px) {
   .container {
-    max-width: 1440px;
+    max-width: 1280px;
   }
   section {
-    max-width: 1440px;
+    max-width: 1280px;
     margin-left: 80px;
     margin-right: 80px;
   }
@@ -564,8 +564,44 @@ p {
     display: none;
   }
   .hero {
+    margin-bottom: 0px;
     margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 0px;
+    max-width: 1440px;
+  }
+  .hero .border-div {
+    height: 519px;
+    width: 1120px;
+    border: 1px solid #000;
+  }
+  .hero .hero-flex {
+    padding-top: 182px;
+    padding-bottom: 200px;
+  }
+  .hero .hero-flex .hero-description {
+    padding-top: 0;
+    max-width: 620px;
+  }
+  .hero .hero-flex .hero-description .hero-pretitle {
+    color: #FF3998;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+  .hero .hero-flex .hero-description .hero-title {
+    font-size: 96px;
+    margin-bottom: 32px;
+  }
+  .hero .hero-flex .hero-description .hero-paragraph {
+    margin-bottom: 41px;
+    max-width: 537px;
+  }
+  .hero .hero-flex .hero-img-div .hero-img {
+    height: 766px;
+    top: -93px;
+    left: -41px;
   }
   .background-div {
     height: 320px;

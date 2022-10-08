@@ -7,15 +7,16 @@
 
 @media only screen and (min-width: 1280px) {
 
+// Generic
 .container{
-  max-width: 1440px;
+  max-width: 1280px;
 }
 
 section {
-  max-width: 1440px;
-  margin-left: 80px;
-  margin-right:80px;
+  max-width: 1280px;
+  @include m.dekstopMargins;
 }
+
 
 // Header
 .header{
@@ -36,9 +37,57 @@ background-color: rgb(77, 168, 168);
 
 // Hero
 .hero{
-  @include m.dekstopMargins;
+    // @include m.dekstopMargins;
+    margin-bottom: 0px;
+    margin-left: 80px;
+    margin-right: 0px;
+    max-width: 1440px;
+
+  .border-div{
+    height: 519px;
+    width: 1120px;
+    border: 1px solid #000;
+
+  }
+
+    
+
+
+  .hero-flex{
+    padding-top: 182px;
+    padding-bottom: 200px;
+
+    .hero-description{
+      padding-top: 0;
+      max-width: 620px;
+
+      .hero-pretitle{
+        @include m.pretitle;
+        text-align: left;
+        margin-bottom: 24px;
+      }
+
+      .hero-title{
+        font-size: 96px;
+        margin-bottom: 32px;
+      }
+      .hero-paragraph{
+        margin-bottom: 41px;
+        max-width: 537px;
+      }
+    }
+
+    .hero-img-div .hero-img{
+      height: 766px;
+      top: -93px;
+      left: -41px;  
+    }
+  }
 
 }
+
+
+
 
 // Banner
 .background-div{
