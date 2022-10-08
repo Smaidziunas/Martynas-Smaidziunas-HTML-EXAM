@@ -9,13 +9,6 @@
 
 // Generic
 
-.body{
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1440px;
-}
-
-
 .container{
   max-width: 1280px;
 }
@@ -30,8 +23,7 @@ section {
 .header{
 padding-top: 70px;
   @include m.dekstopMargins;
-position: sticky;
-// background-color: rgb(77, 168, 168);
+
   .flexSpBt{
     .dekstopMenu{
       display: flex;
@@ -45,7 +37,6 @@ position: sticky;
 
 // Hero
 .hero{
-    // @include m.dekstopMargins;
     margin-bottom: 0px;
     margin-left: 80px;
     margin-right: 0px;
@@ -229,6 +220,5 @@ position: sticky;
     display: block;
   }
 }
-
 
 }

@@ -6,6 +6,9 @@ body {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: #fff ;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 a {
@@ -23,13 +26,4 @@ p {
   margin-top: 0;
 }
 
-
-
-.card {
-  padding: 1rem;
-  box-shadow: 5px 5px 10px rgb(180, 190, 194);
-  border: 1px solid rgb(191, 180, 180);
-  border-radius: 5px;
-  background-color: snow;
-}
 

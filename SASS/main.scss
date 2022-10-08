@@ -27,17 +27,17 @@
     flex-direction: row;
     gap: 20px;
 
-   > a{
-    padding: 4px;
-    font-size: 20px;
-    font-weight: 400;
-    color: v.$dark2-color;
-  }
+    > a{
+      padding: 4px;
+      font-size: 20px;
+      font-weight: 400;
+      color: v.$dark2-color;
+      }
 
-  :hover{
-    color: v.$pink-color;
-    transition: 0.3s;
-  }
+    :hover{
+      color: v.$pink-color;
+      transition: 0.3s;
+    }
   }
 }
 
@@ -86,8 +86,8 @@
         .hero-paragraph{
           @include m.custom-paragraph;
         }
-        }
-      }
+    }
+  }
 }
 
 // Banner
@@ -134,24 +134,24 @@
     }
   }
 
-.products-description{
-  padding-top: 56px;
+  .products-description{
+    padding-top: 56px;
 
-  .product-title{
-    font-weight: 500;
-    font-size: 40px;
-    margin-bottom: 16px;      
+    .product-title{
+      font-weight: 500;
+      font-size: 40px;
+      margin-bottom: 16px;      
+    }
+    .product-paragraph{
+      font-size: 20px;
+      line-height: 150%;
+      color: v.$dark2-color;
+      margin-bottom: 0px;
+        a{
+          text-decoration: underline;
+        }
+    } 
   }
-  .product-paragraph{
-    font-size: 20px;
-    line-height: 150%;
-    color: v.$dark2-color;
-    margin-bottom: 0px;
-      a{
-        text-decoration: underline;
-      }
-  } 
-}
 }
 
 
@@ -171,7 +171,6 @@
 }
 
 .product-card{
-  // @include m.flex-overfl($basis:290px);
   min-width: 290px;
   min-height: 400px;
 
