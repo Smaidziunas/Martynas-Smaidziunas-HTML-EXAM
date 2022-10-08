@@ -17,14 +17,6 @@ a {
   color: inherit;
 }
 
-/* 
-button {
-  font-size: 16px;
-  padding: 0.3em 0.8em;
-  border-radius: 4px;
-  border: 1px solid #777;
-  cursor: pointer;
-} */
 h1,
 h2,
 h3,
@@ -119,7 +111,6 @@ p {
   padding-top: 32px;
   z-index: 10;
   top: 0;
-  background-color: #fff;
 }
 .header .burgerIcon {
   color: rgb(153, 153, 153);
@@ -544,6 +535,11 @@ p {
 }
 
 @media only screen and (min-width: 1280px) {
+  .body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+  }
   .container {
     max-width: 1280px;
   }
@@ -557,7 +553,6 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     position: sticky;
-    background-color: rgb(77, 168, 168);
   }
   .header .flexSpBt .dekstopMenu {
     display: -webkit-box;
@@ -693,7 +688,6 @@ p {
     padding-top: 120px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 500px;
   }
   .footer .socialIcons {
     margin-bottom: 120px;

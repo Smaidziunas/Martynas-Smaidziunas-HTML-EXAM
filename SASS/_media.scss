@@ -8,6 +8,14 @@
 @media only screen and (min-width: 1280px) {
 
 // Generic
+
+.body{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+
 .container{
   max-width: 1280px;
 }
@@ -23,7 +31,7 @@ section {
 padding-top: 70px;
   @include m.dekstopMargins;
 position: sticky;
-background-color: rgb(77, 168, 168);
+// background-color: rgb(77, 168, 168);
   .flexSpBt{
     .dekstopMenu{
       display: flex;
@@ -194,7 +202,6 @@ background-color: rgb(77, 168, 168);
   padding-top: 120px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 500px;
 
   .socialIcons{
     margin-bottom: 120px;
