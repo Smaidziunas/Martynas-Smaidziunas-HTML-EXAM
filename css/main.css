@@ -540,6 +540,9 @@ p {
 }
 
 @media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1440px;
+  }
   section {
     max-width: 1440px;
     margin-left: 80px;
@@ -550,7 +553,7 @@ p {
     margin-left: 80px;
     margin-right: 80px;
     position: sticky;
-    background-color: rgb(60, 87, 87);
+    background-color: rgb(77, 168, 168);
   }
   .header .flexSpBt .dekstopMenu {
     display: -webkit-box;
@@ -591,8 +594,11 @@ p {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
   }
+  .moreinfo .company-logos img:first-of-type {
+    justify-self: start;
+  }
   .moreinfo .company-logos img {
-    place-self: center;
+    justify-self: end;
     max-width: 100%;
   }
   .moreinfo .company-logos .openDoorsimg {
@@ -606,6 +612,9 @@ p {
   }
   .product-cards .products-flex {
     padding-top: 56px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .upsell .hr {
     margin-top: 120px;
@@ -613,16 +622,18 @@ p {
   .upsell .hr2 {
     display: none;
   }
-  .upsell .upsell-bgFlex {
+  .upsell-bgFlex {
     display: grid;
     grid-template-columns: 651px auto;
     width: 1280px;
-  }
-  .upsell-bgFlex {
     margin-left: 0px;
+    margin-right: 0px;
   }
-  .upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-pretitle {
-    padding-top: 120px;
+  .upsell-bgFlex .upsell-img-flex .upsell-img {
+    position: absolute;
+    z-index: -1;
+    top: 85px;
+    left: 200px;
   }
   .upsell-bgFlex .upsell-text-flex .upsell-title-box {
     width: 651px;
@@ -630,10 +641,10 @@ p {
   .upsell-bgFlex .upsell-text-flex .upsell-fup-box {
     width: 651px;
   }
-  .upsell-bgFlex .upsell-img-flex .upsell-img {
-    position: absolute;
-    z-index: -1;
-    top: 85px;
-    left: 200px;
+  .upsell-bgFlex .upsell-text-flex .upsell-fup-box .upsell-paragraph {
+    max-width: 537px;
+  }
+  .upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-pretitle {
+    padding-top: 120px;
   }
 }/*# sourceMappingURL=main.css.map */

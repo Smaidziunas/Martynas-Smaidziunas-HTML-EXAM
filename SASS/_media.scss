@@ -1,13 +1,20 @@
+
+@use 'vars' as v;
 @use 'mixins' as m;
+
 
 // Dekstop version
 
 @media only screen and (min-width: 1280px) {
 
+.container{
+  max-width: 1440px;
+}
+
 section {
   max-width: 1440px;
   margin-left: 80px;
-  margin-right: 80px;
+  margin-right:80px;
 }
 
 // Header
@@ -15,7 +22,7 @@ section {
 padding-top: 70px;
   @include m.dekstopMargins;
 position: sticky;
-background-color: rgb(60, 87, 87);
+background-color: rgb(77, 168, 168);
   .flexSpBt{
     .dekstopMenu{
       display: flex;
@@ -64,8 +71,12 @@ background-color: rgb(60, 87, 87);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
 
+    img:first-of-type{
+      justify-self: start;
+    }
+
     img{
-      place-self: center;
+      justify-self: end;
       max-width: 100%;
     }
 
@@ -85,56 +96,61 @@ background-color: rgb(60, 87, 87);
 }
 .product-cards .products-flex{
   padding-top: 56px;
+  justify-content: space-between;
 }
 
 // Upsell
 
-.upsell .hr{
-  margin-top: 120px;
+.upsell{
+
+  .hr{
+    margin-top: 120px;
+  }
+
+  .hr2 {
+    display: none;
+  }
 }
 
-.upsell .hr2 {
-  display: none;
-}
-
-.upsell .upsell-bgFlex{
+.upsell-bgFlex{
   display: grid;
   grid-template-columns: 651px auto;
   width: 1280px;
+  margin-left:0px;
+  margin-right:0px;
+
+  .upsell-img-flex .upsell-img {
+    position: absolute;
+    z-index: -1;
+    top: 85px;
+    left: 200px;
+  }
+
+  .upsell-text-flex{
+
+    .upsell-title-box{
+      width: 651px;
+    }
+
+    .upsell-fup-box{
+      width: 651px;
+
+      .upsell-paragraph{
+        max-width: 537px;
+      }
+    }
+    
+    .upsell-title-box .upsell-pretitle{
+      padding-top: 120px;
+    }
+  } 
 }
 
-.upsell-bgFlex {
-  margin-left:0px
-}
 
-.upsell-bgFlex .upsell-text-flex .upsell-title-box .upsell-pretitle{
-  padding-top: 120px;
-}
 
-.upsell-bgFlex .upsell-text-flex .upsell-title-box{
-  width: 651px;
-}
 
-.upsell-bgFlex .upsell-text-flex .upsell-fup-box{
-  width: 651px;
-}
 
-.upsell-bgFlex .upsell-img-flex .upsell-img {
-  position: absolute;
-  z-index: -1;
-  top: 85px;
-  left: 200px;
-}
+
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
